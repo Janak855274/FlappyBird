@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flappy Bird</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Floppy Bird</h1>
+            <div class="score-container">
+              <div id="bestScore"></div>
+              <div id="currentScore"></div>
+            </div>
+          </header>
+        
+          <canvas id="canvas" width="431" height="768"></canvas>
+
+          <!-- Game Over Screen -->
+          <div id="gameOverScreen" class="hidden">
+            <h2>Game Over!</h2>
+            <p id="finalScore"></p>
+            <button id="restartButton">Restart</button>
+          </div>
+        
+          <!-- Audio Elements -->
+          <audio id="wingSound" src="wing.mp3"></audio>
+          <audio id="pointSound" src="point.mp3"></audio>
+          <audio id="hitSound" src="hit.mp3"></audio>
+          <audio id="dieSound" src="die.mp3"></audio>
+          <audio id="swooshSound" src="swoosh.mp3"></audio>
+          <audio id="musicSound" src="music.mp3"></audio>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
